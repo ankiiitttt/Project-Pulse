@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Science Project Collaboration</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #28a745;
+        }
+
+        .section ul {
+            list-style: none;
+        }
+
+        .section ul li {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 5px solid #28a745;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input[type="text"], form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .progress-bar div {
+            height: 100%;
+            background-color: #28a745;
+            width: 50%; /* Example progress, this can be dynamic */
+            text-align: center;
+            color: white;
+            line-height: 20px;
+            border-radius: 10px 0 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Project Collaboration Hub</h1>
+</header>
+
+<div class="container">
+    <!-- Project Listings Section -->
+    <div class="section">
+        <h2>Project Listings</h2>
+        <ul>
+            <li>Project A - Solar Energy Experiments</li>
+            <li>Project B - Water Purification Techniques</li>
+            <li>Project C - Plant Growth in Different Soils</li>
+        </ul>
+    </div>
+
+    <!-- Collaboration Board Section -->
+    <div class="section">
+        <h2>Collaboration Board</h2>
+        <ul>
+            <li>John: Does anyone have data on water pH levels?</li>
+            <li>Mary: I found a great resource on solar panel efficiency!</li>
+            <li>Alice: Looking for partners to work on soil experiments.</li>
+        </ul>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <textarea rows="4" placeholder="Share your idea or resource..."></textarea>
+            <input type="submit" value="Post">
+        </form>
+    </div>
+
+    <!-- Progress Tracking Section -->
+    <div class="section">
+        <h2>Progress Tracking</h2>
+        <div>
+            <strong>Project A:</strong>
+            <div class="progress-bar"><div style="width: 70%;">70%</div></div>
+        </div>
+        <div>
+            <strong>Project B:</strong>
+            <div class="progress-bar"><div style="width: 50%;">50%</div></div>
+        </div>
+        <div>
+            <strong>Project C:</strong>
+            <div class="progress-bar"><div style="width: 30%;">30%</div></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

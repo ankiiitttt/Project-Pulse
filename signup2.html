@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Project Collaboration Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .signup-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin-bottom: 20px;
+        }
+        .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .signup-container label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .signup-container input, 
+        .signup-container textarea, 
+        .signup-container select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .signup-container textarea {
+            resize: vertical;
+        }
+        .signup-container button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .signup-container button:hover {
+            background-color: #218838;
+        }
+        .resource-container {
+            display: none;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        .resource-container h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .resource-container ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .toggle-btn {
+            margin-bottom: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+        }
+        .toggle-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Join Science Project Collaborations</h2>
+        <form action="/submit_signup" method="POST">
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="school">School/Institution:</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="project_interests">Project Interests:</label>
+            <textarea id="project_interests" name="project_interests" rows="4" placeholder="Describe your interests and any project ideas you have..." required></textarea>
+
+            <label for="collaboration_area">Areas of Collaboration:</label>
+            <select id="collaboration_area" name="collaboration_area" required>
+                <option value="">--Select an Option--</option>
+                <option value="ideation">Ideation and Brainstorming</option>
+                <option value="research">Research and Data Analysis</option>
+                <option value="development">Development and Prototyping</option>
+                <option value="presentation">Presentation and Documentation</option>
+            </select>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- Buttons to Toggle Resource Sections -->
+    <button class="toggle-btn" onclick="toggleResource('ideation')">Ideation and Brainstorming Resources</button>
+    <div id="ideation" class="resource-container">
+        <h3>Ideation and Brainstorming</h3>
+        <ul>
+            <li>Brainstorming Techniques and Tools</li>
+            <li>Creative Thinking Workshops</li>
+            <li>Project Ideation Case Studies</li>
+        </ul>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleResource('research')">Research and Data Analysis Resources</button>
+    <div id="research" class="resource-container">
+        <h3>Research and Data Analysis</h3>
+        <ul>
+            <li>Data Collection Techniques</li>
+            <li>Statistical Analysis Tools</li>
+            <li>Research Methodologies Guides</li>
+        </ul>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleResource('development')">Development and Prototyping Resources</button>
+    <div id="development" class="resource-container">
+        <h3>Development and Prototyping</h3>
+        <ul>
+            <li>Prototyping Tools and Materials</li>
+            <li>3D Printing Resources</li>
+            <li>Hardware and Software Development Kits</li>
+        </ul>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleResource('presentation')">Presentation and Documentation Resources</button>
+    <div id="presentation" class="resource-container">
+        <h3>Presentation and Documentation</h3>
+        <ul>
+            <li>Scientific Report Writing Guidelines</li>
+            <li>Effective Presentation Techniques</li>
+            <li>Project Documentation Templates</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleResource(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Projects Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h2 {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .project-category {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        .project-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .assets {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .assets h4 {
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            color: #333;
+        }
+        .assets ul {
+            list-style-type: square;
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Projects Classification</h1>
+    </header>
+
+    <nav>
+        <a href="AIML.html">AI/ML</a>
+        <a href="cse.HTML">CSE</a>
+        <a href="cs.html">Cyber Security</a>
+        <a href="ds.HTML">Data Science</a>
+        <a href="it.HTML">IT</a>
+        <a href="ec.HTML">Electrical</a>
+        <a href="me.html">Mechanical</a>
+        <a href="bt.jpeg">Bio-Technical</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- AI/ML Section -->
+        <div class="project-category" id="aiml">
+            <h2>AI/ML Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Predictive Analytics</h3>
+                <p>Using machine learning to predict future trends based on historical data...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Python programming environment</li>
+                        <li>Scikit-learn library</li>
+                        <li>Large historical dataset (CSV format)</li>
+                        <li>Powerful CPU/GPU for training models</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Image Recognition System</h3>
+                <p>Developing an AI system to recognize and classify images...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>TensorFlow or PyTorch framework</li>
+                        <li>Image dataset (JPEG/PNG format)</li>
+                        <li>High-performance computing system</li>
+                        <li>Graphics card for faster processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSE Section -->
+        <div class="project-category" id="cse">
+            <h2>CSE Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Cloud-Based File Storage</h3>
+                <p>Creating a secure cloud storage system for sensitive data...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Cloud server hosting (e.g., AWS, Google Cloud)</li>
+                        <li>Encryption software (e.g., SSL/TLS)</li>
+                        <li>Web development tools (HTML, CSS, JavaScript)</li>
+                        <li>Database management system (MySQL, MongoDB)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Software Development Lifecycle</h3>
+                <p>Implementing the complete SDLC for a custom software solution...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Project management software (e.g., Jira, Trello)</li>
+                        <li>Version control system (Git, GitHub)</li>
+                        <li>Programming IDE (e.g., Visual Studio Code)</li>
+                        <li>Testing frameworks (JUnit, Selenium)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cyber Security Section -->
+        <div class="project-category" id="cybersecurity">
+            <h2>Cyber Security Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Penetration Testing</h3>
+                <p>Conducting a series of penetration tests to assess system vulnerabilities...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Penetration testing tools (e.g., Metasploit, Wireshark)</li>
+                        <li>Virtual machines for testing environments</li>
+                        <li>Network simulation software</li>
+                        <li>Cybersecurity training materials</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Encryption Techniques</h3>
+                <p>Developing new encryption methods to secure online communications...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Cryptography software (e.g., OpenSSL)</li>
+                        <li>Programming language (e.g., Python, C++)</li>
+                        <li>Secure communication protocol (e.g., HTTPS)</li>
+                        <li>Server with encryption support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Science Section -->
+        <div class="project-category" id="datascience">
+            <h2>Data Science Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Big Data Analysis</h3>
+                <p>Analyzing large datasets to find meaningful insights...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Big data processing frameworks (e.g., Hadoop, Spark)</li>
+                        <li>Data visualization tools (e.g., Tableau, Power BI)</li>
+                        <li>Large datasets (e.g., CSV, JSON)</li>
+                        <li>Data storage solutions (e.g., SQL, NoSQL databases)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Data Visualization</h3>
+                <p>Creating visual representations of data to highlight key trends...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Visualization libraries (e.g., D3.js, Matplotlib)</li>
+                        <li>Statistical analysis tools (e.g., R, Python)</li>
+                        <li>Interactive web frameworks (e.g., Dash, Bokeh)</li>
+                        <li>Datasets for visualization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT Section -->
+        <div class="project-category" id="it">
+            <h2>IT Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Network Optimization</h3>
+                <p>Improving network performance through advanced IT solutions...</p>
+                <div class="assets">
+                    <h4>Assets Required:</h4>
+                    <ul>
+                        <li>Network simulation tools (e.g., GNS3, Cisco Packet Tracer)</li>
+                        <li>Networking hardware (e.g., routers, switches)</li>
+                        <li>Network monitoring software (e.g., Wireshark, Nagios)</li>
+                        <li>Network design diagrams</

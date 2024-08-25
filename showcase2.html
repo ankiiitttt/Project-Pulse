@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Project Showcase</title>
+    <style>
+        body {
+            background-image: 
+            url("showcase.jpg");
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #673ab7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .project-card h3 {
+            margin: 0;
+            font-size: 22px;
+            color: #673ab7;
+        }
+        .project-card p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .project-card .btn-group {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .project-card button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .project-card .view-btn {
+            background-color: #673ab7;
+            color: #fff;
+        }
+        .project-card .view-btn:hover {
+            background-color: #512da8;
+        }
+        .project-card .share-btn {
+            background-color: #ff5722;
+            color: #fff;
+        }
+        .project-card .share-btn:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Student Project Showcase
+    </header>
+
+    <div class="container">
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Sample Project Card -->
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Digital Notice Board using Wireless Communication</h3>
+                    <p>This project demonstrates how to create a digital notice board using wireless communication technology.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Traffic Light Control System</h3>
+                    <p>Design and implement a traffic light control system that optimizes traffic flow and safety.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>RFID-Based Attendance System</h3>
+                    <p>A project that uses RFID technology to create an automated attendance system.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Gesture Controlled Robot</h3>
+                    <p>This project involves designing a robot that can be controlled using hand gestures.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Solar-Powered Battery Charger</h3>
+                    <p>Develop a solar-powered charger that provides an eco-friendly way to charge batteries.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Voice Recognition System</h3>
+                    <p>Create a voice recognition system that can be integrated into various applications.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Smart Energy Meter</h3>
+                    <p>A project that designs a smart energy meter for more efficient energy consumption tracking.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Wireless Power Transfer System</h3>
+                    <p>Explore the possibilities of transferring power wirelessly through this innovative project.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Automatic Street Light Controller</h3>
+                    <p>Design an automatic street light controller that conserves energy by adjusting the lighting based on ambient conditions.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Digital Water Level Indicator</h3>
+                    <p>This project involves creating a digital water level indicator to monitor water levels in tanks.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue adding project cards for all provided project titles -->
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Ultrasonic Distance Measurement</h3>
+                    <p>Implement a system that measures distance using ultrasonic waves, useful in various applications.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>GSM-Based Home Security System</h3>
+                    <p>A security system project that uses GSM technology to send alerts during a breach.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>Li-Fi Data Transmission</h3>
+                    <p>This project explores the use of light for high-speed data transmission using Li-Fi technology.</p>
+                    <div class="btn-group">
+                        <button class="view-btn">View Project</button>
+                        <button class="share-btn">Share</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-content">
+                    <h3>DC Motor Speed Control using PWM</h3>
+                    <p>A project that demonstrates how to control the speed of a DC motor using Pulse Width Modulation.</p>
+                    <div class="btn-group">
+                        <button

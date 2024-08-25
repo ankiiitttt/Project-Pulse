@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            margin-bottom: 20px;
+        }
+        .project-list {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+        }
+        .project-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manage Your Projects</h1>
+    </header>
+
+    <nav>
+        <a href="project.html">Projects</a>
+        <a href="collaboration2.html">Collaboration</a>
+        <a href="resource.html">Resources</a>
+        <a href="showcase2.html">Showcase</a>
+        <a href="signup page.html">signup</a>
+        <a href="+.html">+</a>
+    </nav>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Add New Project</h2>
+            <form>
+                <label for="project-title">Project Title</label>
+                <input type="text" id="project-title" placeholder="Enter project title" required>
+
+                <label for="project-description">Project Description</label>
+                <textarea id="project-description" rows="4" placeholder="Describe your project" required></textarea>
+
+                <button type="submit">Add Project</button>
+            </form>
+        </div>
+
+        <div class="project-list">
+            <h2>Ongoing Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Smart City Development</h3>
+                <p>Developing a smart city model that integrates advanced technologies...</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: AI-Powered Health Monitoring</h3>
+                <p>Creating a wearable device that monitors vital signs using AI...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Student Projects Hub
+    </footer>
+</body>
+</html>
